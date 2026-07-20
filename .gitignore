@@ -1,0 +1,14 @@
+# 1. Remove o que nunca deveria ter sido versionado
+rm -rf .idea
+rm -f .DS_Store
+
+# 2. (já colocou o .gitignore na raiz, confirma que ele está lá)
+ls -la
+
+# 3. Reescreve o histórico do zero, numa branch órfã
+git checkout --orphan historico_limpo
+git add -A
+git commit -m "Estrutura inicial do projeto (historico limpo, sem dados sensiveis)"
+git branch -D main
+git branch -m main
+git push -f origin main
