@@ -12,3 +12,5 @@ git commit -m "Estrutura inicial do projeto (historico limpo, sem dados sensivei
 git branch -D main
 git branch -m main
 git push -f origin main
+.idea/
+.DS_Store
