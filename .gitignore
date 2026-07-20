@@ -1,4 +1,3 @@
-cat > .gitignore << 'EOF'
 # Credenciais reais - NUNCA versionar
 includes/config.php
 
@@ -20,4 +19,3 @@ Thumbs.db
 # Logs locais
 *.log
 php_errors.log
-EOF
